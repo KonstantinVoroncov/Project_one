@@ -1,0 +1,1324 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap");
+//логотип с шириной 267 пикселей и высотой 157 пикселей
+@font-face {
+    font-family: "BravoRG";
+    src: url("../fonts/BravoRG.eot");
+    src: local("вє"), url("../fonts/BravoRG.woff") format("woff"), url("../fonts/BravoRG.ttf") format("truetype"),
+        url("../fonts/BravoRG.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ceremonious_one";
+    src: url("../fonts/ceremonious_one.eot");
+    src: local("вє"), url("../fonts/ceremonious_one.woff") format("woff"),
+        url("../fonts/ceremonious_one.ttf") format("truetype"), url("../fonts/ceremonious_one.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pfdregular";
+    src: url("../fonts/pfdintextcondpro-regular.eot");
+    src: local("вє"), url("../fonts/pfdintextcondpro-regular.woff") format("woff"),
+        url("../fonts/pfdintextcondpro-regular.ttf") format("truetype"),
+        url("../fonts/pfdintextcondpro-regular.svg") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pfdimedium";
+    src: url("../fonts/pfdintextcondpro-medium.eot");
+    src: local("вє"), url("fonts/pfdintextcondpro-medium.woff") format("woff"),
+        url("../fonts/pfdintextcondpro-medium.ttf") format("truetype"),
+        url("../fonts/pfdintextcondpro-medium.svg") format("svg");
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pfdlight";
+    src: url("../fonts/pfdintextcondpro-light.eot");
+    src: local("вє"), url("../fonts/pfdintextcondpro-light.woff") format("woff"),
+        url("../fonts/pfdintextcondpro-light.ttf") format("truetype"),
+        url("../fonts/pfdintextcondpro-light.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    min-height: 100%;
+    grid-template-rows: minmax(100px, auto) 1fr minmax(234px, auto);
+}
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+.header {
+    grid-area: header;
+    background-color: rgb(28, 36, 42);
+    font-family: "pfdlight";
+
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &__body {
+        padding-left: 25px;
+        display: flex;
+        align-items: center;
+        min-height: 100px;
+    }
+
+    &__logo {
+        margin-right: 78px;
+        margin-top: -14px;
+    }
+
+    &__logo1 {
+    }
+
+    &__logo2 {
+    }
+
+    &__tabs {
+        display: flex;
+    }
+
+    &__block {
+    }
+
+    &__link {
+        margin: 0 16px;
+        color: #fff;
+        opacity: 0.9;
+    }
+
+    &__region {
+        display: flex;
+        align-items: center;
+        margin-left: 34px;
+        margin-right: 31px;
+        color: #fff;
+        padding-right: 10px;
+        opacity: 0.9;
+    }
+    &__globe {
+        margin-right: 11px;
+    }
+    &__choice {
+    }
+
+    &__people {
+        display: flex;
+        align-items: center;
+    }
+
+    &__human {
+    }
+    &__allarrow {
+        display: flex;
+        flex-direction: column;
+        padding-left: 6px;
+        img {
+            padding-bottom: 3px;
+        }
+        background-image: url();
+    }
+}
+
+.logo {
+    display: flex;
+}
+.heder {
+    &__globe {
+    }
+}
+.main {
+    grid-area: main;
+}
+.title {
+    font-family: "ceremonious_one";
+    color: rgb(187, 156, 102);
+}
+.info {
+    text-align: center;
+    padding-top: 33px;
+    padding-bottom: 100px;
+    background-image: url("../img/info/background.jpg");
+    background-repeat: no-repeat;
+    &__title {
+        font-size: 40px;
+        font-family: "ceremonious_one";
+        color: rgb(187, 156, 102);
+        padding-bottom: 35px;
+    }
+
+    &__subtitle {
+        font-size: 35px;
+        font-family: "pfdlight";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        padding-bottom: 25px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 277px;
+            left: 44.8%;
+            width: 100px;
+            height: 100px;
+            background-image: url(../img/info/rhomb_white.png);
+            z-index: 1;
+            background-repeat: no-repeat;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 48.7%;
+            top: 312px;
+            border-width: 2px;
+            border-color: rgb(187, 156, 102);
+            border-style: solid;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            z-index: 2;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+        font-family: "pfdlight";
+        color: rgb(255, 255, 255);
+        line-height: 1.667;
+        padding-left: 100px;
+        padding-right: 140px;
+        padding-bottom: 50px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 435.5px;
+            top: 253px;
+            height: 28px;
+            width: 81px;
+            background-image: url(../img/info/left_right_arrow_gold.png);
+            background-repeat: no-repeat;
+            z-index: 3;
+        }
+    }
+
+    &__button {
+        font-size: 15px;
+        font-family: "pfdlight";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: inline-block;
+        padding: 12.5px 50px;
+        border: 1px solid rgb(187, 156, 102);
+    }
+}
+
+.auction {
+    text-align: center;
+    padding-top: 75px;
+    &__body {
+    }
+
+    &__title {
+        font-size: 40px;
+        padding-bottom: 25px;
+    }
+
+    &__lots {
+        font-size: 35px;
+        color: rgb(28, 36, 42);
+        text-transform: uppercase;
+        line-height: 0.6;
+        font-family: "pfdlight";
+        letter-spacing: 4px;
+        padding-bottom: 25px;
+    }
+
+    &__image {
+        text-align: center;
+    }
+
+    &__line1 {
+        height: 2px;
+        margin-right: 7px;
+
+        img {
+            max-width: 331px;
+        }
+    }
+
+    &__circle1 {
+        border-width: 1px;
+        border-color: rgb(187, 156, 102);
+        border-style: solid;
+        border-radius: 50%;
+        min-width: 7px;
+        height: 8px;
+    }
+
+    &__rhombsmall {
+        margin-left: 5px;
+        margin-right: 6px;
+    }
+
+    &__rhombbig {
+        margin-right: 40px;
+    }
+
+    &__logo1 {
+        margin-top: -14px;
+    }
+
+    &__rhombbig2 {
+        margin-left: 40px;
+    }
+
+    &__rhimbsmall2 {
+        margin-right: 5px;
+        margin-left: 6px;
+    }
+
+    &__circle2 {
+        border-width: 1px;
+        border-color: rgb(187, 156, 102);
+        border-style: solid;
+        border-radius: 50%;
+        min-width: 7px;
+        height: 8px;
+    }
+
+    &__line2 {
+        margin-left: 7px;
+        height: 2px;
+
+        img {
+            max-width: 335px;
+        }
+    }
+    &__slots {
+    }
+}
+
+.slots {
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+
+    &__list {
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image1 {
+        height: 250px;
+        width: 250px;
+        position: relative;
+        background-image: url(../img/rhomb_white.png), url(../img/auction/lots_clock.png);
+        background-position: 50% 133%, 0;
+        background-repeat: no-repeat;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-size: 21px;
+        color: rgb(70, 5, 5);
+        text-transform: uppercase;
+        line-height: 1.19;
+        font-family: "pfdimedium";
+        margin-bottom: 25px;
+        flex: 1 1 auto;
+    }
+
+    &__cost {
+        color: rgb(70, 5, 5);
+        height: 110px;
+        background-image: url(../img/auction/price_rhomb.png);
+        background-repeat: no-repeat;
+        background-position: 50% 0px;
+    }
+
+    &__bet {
+        line-height: 29.5px;
+        font-family: "pfdlight";
+    }
+
+    &__price {
+        font-size: 50px;
+        color: rgb(28, 36, 42);
+        line-height: 0.42;
+        margin-top: 12px;
+        margin-bottom: 50px;
+        font-family: "pfdlight";
+    }
+
+    &__button {
+        font-size: 21px;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        font-family: "pfdlight";
+        padding: 12px 18px;
+        border: 2px solid rgb(187, 156, 102);
+    }
+
+    &__image2 {
+        height: 250px;
+        width: 250px;
+        background-image: url(../img/rhomb_white.png), url(../img/auction/lots_vine.png);
+        background-position: 50% 133%, 0;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    &__image3 {
+        height: 250px;
+        width: 250px;
+        background-image: url(../img/rhomb_white.png), url(../img/auction/lots_rolex.png);
+        background-position: 50% 133%, 0;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    &__time {
+        position: absolute;
+        top: 93%;
+        left: 38%;
+        color: rgb(70, 5, 5);
+        &::before {
+            content: "";
+            width: 12px;
+            height: 15px;
+            position: absolute;
+            top: -20px;
+            left: 39%;
+            background-image: url(../img/auction/clock_mini.png);
+        }
+    }
+}
+.auction {
+    &__menulots {
+        padding-top: 50px;
+    }
+}
+.menulots {
+    &__body {
+        margin-left: -15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__leftarrow {
+        width: 8px;
+    }
+
+    &__line1 {
+        height: 2px;
+        margin-left: -14px;
+    }
+
+    &__alllots {
+        width: 174px;
+        height: 100px;
+        font-family: "pfdlight";
+        line-height: 100px;
+        font-size: 21px;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        background-image: url(../img/all_lots/circle_between.png), url(../img/all_lots/gold_circle.png);
+        background-repeat: no-repeat;
+        background-position: 0 50%, 50% 0;
+        margin: 0 20px;
+    }
+
+    &__line2 {
+        height: 2px;
+        margin-right: -24px;
+    }
+
+    &__rightarrow {
+        width: 8px;
+    }
+}
+
+.image {
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav {
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 75px;
+        background-image: url(../img/nav/rhomb_background.png), url(../img/nav/circles_background.png),
+            url(../img/nav/lines_background.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%, 50% 50%, 50% 50%;
+    }
+
+    &__shell1 {
+        height: 250px;
+        width: 250px;
+        background-image: url(../img/nav/clock_background.png);
+        background-repeat: no-repeat;
+        position: relative;
+        margin: 50px 50px 25px 0px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    }
+
+    &__items1 {
+        position: relative;
+        z-index: 2;
+        img {
+            padding-top: 25px;
+        }
+    }
+
+    &__text {
+        font-size: 21px;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 80px;
+        font-family: "pfdlight";
+        z-index: 2;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 22px;
+            left: 31%;
+            top: 90px;
+            right: 0;
+            bottom: 0;
+            background-image: url(../img/nav/down_background.png);
+        }
+    }
+
+    &__shell2 {
+        height: 250px;
+        width: 250px;
+        position: relative;
+        background-image: url(../img/nav/jewerly_background.png);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        margin: 50px 50px 25px 50px;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    &__items2 {
+        position: relative;
+        z-index: 2;
+        img {
+            padding-top: 25px;
+        }
+    }
+
+    &__shell3 {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        background-image: url(../img/nav/auto_background.png);
+        background-repeat: no-repeat;
+        margin: 50px 0px 25px 50px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    &__items3 {
+        position: relative;
+        z-index: 2;
+        img {
+            padding-top: 25px;
+        }
+    }
+
+    &__shell4 {
+        height: 250px;
+        width: 250px;
+        background-image: url(../img/nav/accessories_background.png);
+        background-repeat: no-repeat;
+        margin: 25px 50px 25px 0px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    &__items4 {
+        position: relative;
+        z-index: 2;
+        img {
+            padding-top: 25px;
+        }
+    }
+
+    &__shell5 {
+        height: 250px;
+        width: 250px;
+        background-image: url(../img/nav/property_background.png);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        margin: 25px 50px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    &__items5 {
+        position: relative;
+        z-index: 2;
+        img {
+            padding-top: 25px;
+        }
+    }
+
+    &__shell6 {
+        height: 250px;
+        width: 250px;
+        background-image: url(../img/nav/tech_background.png);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        margin: 25px 0px 25px 50px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    &__items6 {
+        position: relative;
+        z-index: 2;
+        img {
+            padding-top: 25px;
+        }
+    }
+
+    &__shell7 {
+        height: 250px;
+        width: 250px;
+        background-image: url(../img/nav/clothes_background.png);
+        background-repeat: no-repeat;
+        margin: 25px 50px 25px 0px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    &__items7 {
+        position: relative;
+        z-index: 2;
+        img {
+            padding-top: 25px;
+        }
+    }
+
+    &__shell8 {
+        height: 250px;
+        width: 250px;
+        background-image: url(../img/nav/art_background.png);
+        background-repeat: no-repeat;
+        margin: 25px 50px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    &__items8 {
+        position: relative;
+        z-index: 2;
+        img {
+            padding-top: 25px;
+        }
+    }
+
+    &__shell9 {
+        height: 250px;
+        width: 250px;
+        background-image: url(../img/nav/alcohol_background.png);
+        background-repeat: no-repeat;
+        margin: 25px 0px 25px 50px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            border-radius: 50%;
+        }
+    }
+
+    &__items9 {
+        position: relative;
+        z-index: 2;
+        img {
+            padding-top: 25px;
+        }
+    }
+}
+.about {
+    height: 375px;
+    margin-bottom: 75px;
+    &__body {
+        display: flex;
+    }
+
+    &__image {
+        flex: 1 1 auto;
+        height: 375px;
+        padding: 10px 60px 10px 25px;
+        margin-right: 50px;
+
+        background-image: url(../img/about/about_background.png), url(../img/about/about_rhomb.png),
+            url(../img/about/about_rhomb_background.png);
+        background-repeat: repeat-y, no-repeat, no-repeat;
+        background-position: 0% 0%, 50% 1%, 0% 100%;
+    }
+
+    &__text {
+        font-size: 15px;
+        color: rgb(51, 51, 51);
+        line-height: 1.667;
+        text-align: justify;
+    }
+
+    &__article {
+        padding-bottom: 25px;
+    }
+}
+.services {
+    background-color: rgb(28, 36, 42);
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 100px;
+    &__title {
+        font-size: 40px;
+        padding-bottom: 25px;
+    }
+
+    &__subtitle {
+        font-size: 35px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 0.6;
+        font-family: "pfdlight";
+        padding-bottom: 25px;
+    }
+
+    &__lame {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    &__body {
+        display: flex;
+    }
+
+    &__card {
+    }
+
+    &__item {
+        text-align: center;
+    }
+}
+
+.lame {
+    &__line1 {
+        height: 1px;
+        margin-right: 7px;
+    }
+
+    &__circle1 {
+        height: 8px;
+        width: 8px;
+        border: 1px solid rgb(187, 156, 102);
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    &__smallrhomb1 {
+        margin-right: 5px;
+    }
+
+    &__bigrhomb1 {
+    }
+
+    &__logo {
+        padding: 0 50px;
+    }
+
+    &__bigrhomb2 {
+        margin-right: 5px;
+    }
+
+    &__smallrhomb2 {
+        margin-right: 5px;
+    }
+
+    &__circle2 {
+        height: 8px;
+        width: 8px;
+        border: 1px solid rgb(187, 156, 102);
+        border-radius: 50%;
+        margin-right: 7px;
+    }
+
+    &__line2 {
+        height: 1px;
+    }
+}
+.item {
+    &__image {
+        margin-bottom: 25px;
+        img {
+            max-width: 250px;
+            max-height: 175px;
+        }
+    }
+
+    &__title {
+        font-size: 21px;
+        font-family: "pfdlight";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.19;
+        padding-bottom: 25px;
+    }
+
+    &__text {
+        font-size: 15px;
+        font-family: "Myriad Pro";
+        color: rgb(187, 156, 102);
+        line-height: 1.667;
+        padding-bottom: 25px;
+    }
+
+    &__button {
+        font-size: 21px;
+        font-family: "pfdlight";
+        text-transform: uppercase;
+        line-height: 1.19;
+        background-image: url(../img/services/button_line.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        a {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    &__link {
+    }
+}
+.quotes {
+    padding-top: 50px;
+    padding-bottom: 75px;
+    &__title {
+        font-size: 40px;
+        color: rgb(187, 156, 102);
+        line-height: 0.625;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 35px;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        line-height: 0.714;
+    }
+
+    &__lame {
+        display: flex;
+        align-items: center;
+    }
+
+    &__body {
+        display: flex;
+    }
+
+    &__image {
+        width: 300px;
+        height: 275px;
+        background-image: url(../img/quotes/MT1.png);
+        background-repeat: no-repeat;
+        background-position: 50% 62%;
+    }
+
+    &__text {
+        padding-top: 75px;
+    }
+
+    &__paragraph1 {
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-family: "pfdimedium";
+        padding-bottom: 25px;
+    }
+
+    &__paragraph2 {
+        padding-bottom: 6px;
+        font-family: "pfdimedium";
+        opacity: 0.8;
+    }
+
+    &__paragraph3 {
+        font-family: "pfdimedium";
+        opacity: 0.8;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__line1 {
+        height: 1px;
+    }
+
+    &__circle {
+        padding: 0 65px;
+        background-image: url(../img/quotes/footer_two_circles.png), url(../img/quotes/circle_small.png),
+            url(../img/quotes/circle_arrow.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%, 50% 50%, 49% 33%;
+    }
+
+    &__line2 {
+        height: 1px;
+    }
+}
+
+.lame {
+    margin-top: 25px;
+    &__line1 {
+        height: 1px;
+    }
+    &__line2 {
+        height: 1px;
+    }
+}
+
+.company {
+    display: grid;
+    padding-bottom: 75px;
+    grid-template-columns: 1fr 450px 450px 1fr;
+    grid-template-areas:
+        "news events"
+        "subscribe mail";
+    &__news {
+        grid-area: news;
+        grid-column: 2/3;
+    }
+
+    &__events {
+        grid-area: events;
+        grid-column: 3/4;
+    }
+
+    &__subscribe {
+        grid-area: subscribe;
+        grid-column: 2/3;
+    }
+
+    &__mail {
+        grid-area: mail;
+        grid-column: 3/4;
+    }
+}
+
+.news {
+    width: 425px;
+    &__title {
+        font-size: 35px;
+        text-transform: uppercase;
+        line-height: 0.714;
+        font-family: "pfdlight";
+        font-weight: 500;
+        letter-spacing: 6px;
+        padding-left: 21px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url(../img/company/news.png);
+            background-repeat: no-repeat;
+            width: 13px;
+            height: 21px;
+        }
+    }
+
+    &__block1 {
+        padding-top: 25px;
+        text-align: left;
+        padding-bottom: 25px;
+    }
+
+    &__date {
+        font-size: 12px;
+
+        color: rgb(187, 156, 102);
+        line-height: 2.083;
+    }
+
+    &__text {
+        line-height: 1.5;
+        font-family: "pfdlight";
+        color: rgb(51, 51, 51);
+        span {
+            text-decoration: underline;
+            text-decoration-color: gray;
+            display: block;
+        }
+    }
+
+    &__block2 {
+        padding-bottom: 25px;
+    }
+
+    &__block3 {
+        padding-bottom: 25px;
+    }
+}
+.events {
+    width: 425px;
+    &__title {
+        font-size: 35px;
+        text-transform: uppercase;
+        line-height: 0.714;
+        font-family: "pfdlight";
+        font-weight: 500;
+        letter-spacing: 6px;
+        padding-left: 30px;
+        padding-bottom: 25px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url(../img/company/events_item.png), url(../img/company/events_arrow.png),
+                url(../img/company/events.png);
+            background-repeat: no-repeat;
+            background-position: 0% 0%, 100% 0%, 0% 0%;
+            width: 20px;
+            height: 25px;
+        }
+    }
+
+    &__block1 {
+        padding-bottom: 25px;
+    }
+
+    &__text {
+        font-size: 15px;
+        color: rgb(51, 51, 51);
+        line-height: 1.5;
+        text-align: left;
+        font-family: "pfdlight";
+        span {
+            display: block;
+            text-decoration: underline;
+            text-decoration-color: gray;
+        }
+    }
+
+    &__block2 {
+    }
+}
+.subscribe {
+    padding-right: 50px;
+    &__title {
+        font-size: 35px;
+        text-transform: uppercase;
+        line-height: 0.714;
+        font-family: "pfdlight";
+        font-weight: 500;
+        letter-spacing: 6px;
+        padding-left: 30px;
+        padding-bottom: 25px;
+        margin-top: 25px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 25px;
+            width: 25px;
+            background-image: url(../img/company/subscribe_shell.png), url(../img/company/subscribe_word.png),
+                url(../img/company/subscribe_line.png), url(../img/company/subscribe.png);
+            background-repeat: no-repeat;
+            background-position: 40% 0%, 48% 20%, 30% 40%, 0% 100%;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: left;
+        font-family: "pfdlight";
+        color: rgb(51, 51, 51);
+    }
+}
+.company {
+    &__mail {
+        padding: 12.5px 0;
+    }
+}
+.mail {
+    margin-top: 55px;
+    &__name {
+        border-top: 3px solid rgb(187, 156, 102);
+        border-left: 3px solid rgb(187, 156, 102);
+        border-bottom: 3px solid rgb(187, 156, 102);
+        padding: 12.5px 0;
+        padding-left: 25px;
+        padding-right: 130px;
+        font-size: 15px;
+        color: rgb(79, 79, 79);
+    }
+
+    &__value {
+        background-color: #fff;
+        margin-left: -3px;
+        padding-left: 22px;
+        padding-right: 46px;
+        padding-top: 7px;
+        padding-bottom: 10px;
+        border-top: 3px solid rgb(187, 156, 102);
+        border-right: 3px solid rgb(187, 156, 102);
+        border-bottom: 3px solid rgb(187, 156, 102);
+        background-image: url(../img/company/mail_line.png), url(../img/company/mail_arrow_horizontally.png),
+            url(../img/company/mail_arrow.png), url(../img/company/mail_arrow.png);
+        background-repeat: no-repeat;
+        background-position: 0% 50%, 80% 50%, 85% 50%, 78% 50%;
+        font-size: 21.238px;
+        color: rgb(28, 36, 42);
+        text-transform: uppercase;
+    }
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(28, 36, 42);
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        height: 234px;
+        align-items: center;
+    }
+
+    &__logo {
+        flex-direction: column;
+        margin-right: 25px;
+    }
+
+    &__copy {
+        font-size: 14px;
+        font-family: "pfdlight";
+        color: rgb(187, 156, 102);
+        line-height: 1.5;
+        padding-top: 5px;
+    }
+
+    &__nav {
+        margin-right: 75px;
+    }
+
+    &__block1 {
+        font-size: 14px;
+        font-family: "pfdlight";
+        text-transform: uppercase;
+        line-height: 1.786;
+        a {
+            color: rgb(255, 255, 255);
+            padding-right: 13px;
+        }
+    }
+
+    &__block2 {
+        font-size: 14px;
+        font-family: "pfdlight";
+        text-transform: uppercase;
+        line-height: 1.786;
+        a {
+            color: rgb(255, 255, 255);
+            padding-right: 13px;
+        }
+    }
+
+    &__block3 {
+        font-size: 14px;
+        font-family: "pfdlight";
+        text-transform: uppercase;
+        line-height: 1.786;
+        a {
+            color: rgb(255, 255, 255);
+            padding-right: 13px;
+        }
+    }
+
+    &__feedback {
+    }
+}
+
+.logo {
+}
+.feedback {
+    &__body {
+        width: 225px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__first {
+        font-size: 14px;
+        color: rgb(187, 156, 102);
+        text-transform: uppercase;
+        line-height: 1;
+        align-self: start;
+        padding-left: 30px;
+    }
+
+    &__second {
+        margin-top: -20px;
+        font-size: 50px;
+        color: rgb(187, 156, 102);
+        text-transform: uppercase;
+        line-height: 1;
+        align-self: center;
+        padding-right: 30px;
+    }
+
+    &__reverse {
+        margin-top: 5px;
+        font-size: 14px;
+        font-family: "Myriad Pro";
+        color: rgb(187, 156, 102);
+        line-height: 1.5;
+        align-self: flex-end;
+        position: relative;
+        padding-left: 10px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url(../img/footer/reverse.png);
+            background-repeat: no-repeat;
+            width: 8px;
+            height: 11px;
+            margin-top: 5px;
+        }
+        a {
+            border-bottom: 1px dashed rgb(187, 156, 102);
+            color: rgb(187, 156, 102);
+        }
+    }
+}
